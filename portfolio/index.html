@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Personal Portfolio Website Design | MST</title>
+
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+       
+
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <header class="header">
+            <a href="#" class="logo">Portfolio</a>
+
+            <i class="bx bx-menu" id="menu-icon"></i>
+            <nav class="navbar">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Internships</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <section class="home "id="home">
+            <div class="home-content">
+                <h3>Hello, It's Me</h3>
+                    <h1>Sai Tharun</h1>
+                    <h3>And I'm a <span class="multiple-text"></span></h3>
+                    <p>
+                        An independent and self-motivated engineering student with strong ability 
+                        to think out of the box for faster, quicker and productive solutions.</p>
+                    <div class="social-media">
+                         <a href="https://github.com/sai143-m"><i class='bx bxl-github' ></i></a>
+                         <a href="#"><i class='bx bxl-twitter' ></i></a>
+                         <a href="https://www.instagram.com/sai_tharun_413/saved/"><i class='bx bxl-instagram-alt' ></i></a>
+                         <a href="https://www.linkedin.com/in/sai-tharun-375308241/"><i class='bx bxl-linkedin' ></i></a>
+                    </div>
+                    <a href="resume/Mst resume.pdf" download class="btn">Download CV</a>
+            </div>
+
+            <div class="home-img">
+                <img src="image/sai.png" alt="">
+            </div>
+        </section>
+
+    <!--about section -->
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="image/mst.jpg" alt="" >
+            </div>
+
+            <div class="about-content">
+                <h2 class="heading">About<span>Me</span></h2>
+                <h3>Frontend Developer</h3>
+                <p>Mechanical Engineer </p> 
+                <a href="resume/read.html" class="btn">Read More</a>
+            </div>
+        </section>
+        <!--service section-->
+        <section class="services"id="services">
+            <h2 class="heading">My<span>Internships</span></h2>
+            <div class="services-container">
+                <div class="services-box">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>FrontEnd developer</h3>
+                    <p>offered by IBM for 6 weeks</p>
+                    <a href="#" class="btn">Read more</a>
+                </div> 
+
+                <div class="services-box">
+                    <i class='bx bxs-terminal'></i>
+                    <h3>Cyber Security</h3>
+                    <p> In AICTE for 6 weeks</p>
+                    <a href="image/AICTE cyber.pdf" class="btn">Read more</a>
+                </div>
+
+                <div class="services-box">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Web Developer</h3>
+                    <p> Habib IT solutions for 2 months</p>
+                    <a href="image/Web developer.jpeg" class="btn">Read more</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- portfolio section -->
+        <section class="portfolio" id="portfolio" >
+            <h2 class="heading">MY <span>Certificates</span></h2>
+
+            <div class="portfolio-container">
+                <div class="portfolio-box">
+                   <img src="/image/portfolio1.jpg"alt="">
+                    <div class="portfolio-layer">
+                    <h4>C Language</h4>
+                    <p>Spoken tutorial test from IIT Bombay</p>
+                 <a href="image/MARAM-SAI-THARUN-Participant-Certificate.pdf"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="/image/portfolio2.jpg"alt="">
+                 <div class="portfolio-layer">
+                 <h4>JAVA</h4>
+                 <p>Java programming language Certificate by NPTEL IIT Kharagpur</p>
+              <a href="image/java.jpeg"><i class='bx bx-link-external'></i></a>
+             </div>
+         </div>
+
+         <div class="portfolio-box">
+            <img src="/image/portfolio3.jpg"alt="">
+             <div class="portfolio-layer">
+             <h4>Cyber security</h4>
+             <p>Work shop on Cyber Security and Ethical Hacking</p>
+          <a href="image/Certificate.pdf"><i class='bx bx-link-external'></i></a>
+         </div>
+     </div>
+
+     <div class="portfolio-box">
+        <img src="/image/portfolio4.jpg"alt="">
+         <div class="portfolio-layer">
+         <h4>Writing Winning Resumes and Cover Letters
+        </h4>
+         <p>University of Maryland </p>
+      <a href="image/Coursera resume and CV.pdf"><i class='bx bx-link-external'></i></a>
+     </div>
+ </div>
+        </div>
+        </section>
+        <!-- End Portfolio Section -->
+        <!--contact section-->
+        <section id="contact" class="contact">
+            <h2 class="heading">GET IN <span>TOUCH </span></h2>
+            <form name="submit-to-google-sheet">
+                <div class="input-box">
+                    <input type="text" name = "Name" placeholder="Full Name">
+                    <input type="email" name = "Email" placeholder="Email Address">
+                </div>
+                <div class="input-box">
+                    <input type="number" name ="Number"placeholder="Mobile Number">
+                    <input type="text" name ="Subject"placeholder="Email subject">
+                </div>
+                <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+               <!-- <input type="submit" value="Send Message" class="btn">-->
+                <input type="submit" value="Send Message" class="btn">
+            </form>
+            <span id="msg"></span>
+        </section>
+        <!--footer design-->
+        <footer class="footer">
+            <div class="footer-text">
+                <p>Copyright &copy; 2023 by SAI | All rights reserved</p>
+            </div>
+            <div class="footer-iconTop">
+                <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+            </div>
+
+        </footer>
+
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+        <script src="script.js"></script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwdJ5hYTJ3HZWvQTMXpOWxhTlKMH1oSYy_3auqjnVacCsQZjE9xiPJzVfSqo7xQ7q552w/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById('msg')
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent succesfully"
+                    setTimeout(function(){
+                        msg.innerHTML =""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+
+    </body>
+</html> 
